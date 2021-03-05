@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#312747;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 100px;
+    width:100%;
+    display:flex;
+    z-index:10;
+}
+header .logo{
+    position:absolute;
+    color:#fff;
+    font-size:28px;
+    text-decoration:none;
+    font-weight:600;
+}
+section{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    padding:0 100px;
+}
+section .contentBx{
+    position:absolute;
+    max-width:600px;
+    z-index:1000;
+}
+section .contentBx h2{
+    font-size:60px;
+    text-transform:uppercase;
+    color:white;
+}
+section .contentBx p{
+    font-size:18px;
+    color:white;
+}
+section .contentBx .countdown{
+    display:flex;
+    margin:20px 0;
+}
+section .contentBx .countdown .time{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#fff;
+    margin-right:20px;
+    font-size:48px;
+    min-width:110px;
+    font-weight:700;
+    padding:10px 5px 15px;
+    border-radius:4px;
+    color:#ff0083;
+}
+section .contentBx .countdown .time span{
+    margin-top:-10px;
+    font-size:20px;
+    font-weight:600;
+    color:#312747;
+}
+section .contentBx a{
+    position:relative;
+    margin-top:10px;
+    display:inline-block;
+    background:#ff0083;
+    color:#fff;
+    font-size:20px;
+    letter-spacing:2px;
+    padding:15px 15px;
+    text-decoration:none;
+    border-radius:30px;
+}
+section .imgBx img{
+    max-width:500px;
+    width:100%;
+    margin-top:100px;
+    z-index:2;
+    display:flex;
+ margin-left:600px;
+}
+.wave{
+position:absolute;
+bottom:0;
+right:0;
+z-index:1;
+pointer-events:none;
+}
+section .sci{
+    position:absolute;
+    bottom:40px;
+    left:100px;
+    z-index:1000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    filter:invert(1);
+}
+section .sci li {
+    list-style-type:none;
+}
+section .sci li a{
+    display:block;
+    margin-right:20px;
+    transform:scale(0.8);
+}
+section .sci li a img{
+    max-width:40px;
+}
+.newsletter{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    padding:60px;
+    background:#fff;
+    z-index:10000;
+    box-shadow:0 0 0 100vh rgba(49,39,71,0.95);
+    visibility:hidden;
+    opacity:0;
+    transition:0.5s;
+}
+.newsletter.active form{
+    visibility:visible;
+    opacity:1;
+}
+.newsletter h2{
+    font-size:48px;
+    color:#312747;
+}
+.newsletter p{
+    font-size:20px;
+    color:#312747;
+}
+.newsletter .inputbox{
+    margin-top:20px;
+}
+.newsletter .inputbox input{
+    padding:10px;
+    outline:none;
+    width:300px;
+    font-size:18px;
+    border:1px solid #999;
+}
+.newsletter .inputbox input[type="submit"]{
+padding:10px;
+outline:none;
+width:140px;
+color:#fff;
+background:#ff0083;
+border:1px solid #ff0083;
+letter-spacing:2px;
+box-sizing:border-box;
+cursor:pointer;
+}
+@media (max-width:991px){
+    section{
+        flex-direction:column;
+        padding-top:150px;
+        height:auto;
+    }
+    section .contentBx{
+        max-width:100%;
+    }
+    section .imgBx img{
+        margin-left:-160px;
+        position:absolute;
+        padding:40px 0;
+        width:400px;
+        margin-top:200px;
+
+        
+    }
+}
+@media (max-width:767px){
+    header{
+        padding:20px 50px;
+    }
+    section{
+        flex-direction:column;
+        padding:110px 50px 100px;
+        height:auto;
+    }
+    section .contentBx h2{
+        font-size:40px;
+        margin-left:20px;
+    }
+    section .contentBx p{
+        font-size:14px;
+        margin-left:15px;
+    }
+    section .contentBx .countdown .time{
+        font-size:30px;
+        min-width:70px;
+        margin-right:5px;
+    }
+    section .contentBx .countdown .time span{
+        font-size:14px;
+    }
+    section .contentBx .countdown{
+        margin-left:25px;
+    }
+}
+section .contentBx a{
+    position:relative;
+    margin-top:10px;
+    margin-left:10px;
+    display:inline-block;
+    background:#fff;
+    color:#ff0083;
+    font-size:16px;
+    letter-spacing:2px;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:40px;
+    
+}
+section .sci{
+    left:50px;
+}
+.newsletter{
+    width:90%;
+    padding:30px;
+}
+.newsletter .inputbox input
+{
+    margin-top:10px;
+    width:100%;
+}
+}
